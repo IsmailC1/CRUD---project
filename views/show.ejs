@@ -1,0 +1,20 @@
+<% include ./partials/header %>
+<div class="ui main text container segment">
+    <div class="ui huge header"><%= book.title %></div>
+  <div class="ui top attached">
+      <div class="item">
+           <img class="ui centered rounded image"src="<%= book.image%>">
+           <div class="content">
+                <span><%= book.created.toDateString()%></span>
+           </div>
+           <div class="description">
+               <p><%- book.body%></p>
+               <p><%= book.author%></p>
+           </div>
+      </div>
+      
+     
+  </div>
+    
+    
+<% include ./partials/footer %>

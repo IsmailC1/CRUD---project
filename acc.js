@@ -50,6 +50,16 @@ app.post("/books", function(req, res){
          }
      });
 });
+//show route
+app.get("/books/:id",function(req, res) {
+    Book.findById(req.params.id, function(err,showTemp){
+       if(err){
+           res.redirect("/books");
+       } else {
+           res.render("show",{book:showTemp});
+       }
+    });
+});
 
 app.listen(process.env.PORT, process.env.IP, function(){
     console.log("Server is running!");
