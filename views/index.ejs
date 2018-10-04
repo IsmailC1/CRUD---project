@@ -1,0 +1,13 @@
+<% include ./partials/header %>
+<h1>Index Page!</h1>
+
+<%books.forEach(function(book){ %>
+    <div>
+     <h2><%= book.title%></h2>
+     <image src="<%= book.image%>">
+     <span><%= book.created%></span>
+     <p><%= book.body%></p>
+     <p><%= book.author%></p>
+   </div>
+  <% }) %>
+  <% include ./partials/footer %>
