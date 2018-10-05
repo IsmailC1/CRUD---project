@@ -1,14 +1,37 @@
 <% include ./partials/header %>
-<h1>Index Page!</h1>
-
+<div class="ui main text container">
+    <div class="ui huge header">RESTful Book App</div>
+    <div class="ui attached segment">
+        <div class="ui divided items">
+            
 <%books.forEach(function(book){ %>
-    <div>
-     <h2><%= book.title%></h2>
-     <image src="<%= book.image%>">
-     <span><%= book.created%></span>
-     <p><%= book.body.substring(0,59)%>...</p>
-     <p><%= book.author%></p>
-     <a href="/books/<%= book._id%>">Read More</a>
-   </div>
-  <% }) %>
+              <div class="item">
+                  <div class="image">
+                      <image src="<%= book.image%>">
+                  </div>
+                  <div class="content">
+                       <a class="header" href="/books/<%= book._id %>"><%= book.title%></a> 
+                       <div class="description">
+                           <p><%= book.author%></p>
+                       </div>
+                       <div class="meta">
+                          <span><%= book.created.toDateString()%></span>
+                       </div>
+                       <div class="description">
+                            <p><%- book.body.substring(0,59)%>...</p>
+                       </div>
+                       <div class="extra">
+                           <a class="ui floated basic violet button" href="/books/<%= book._id%>"><%= book.title%>
+                            Read More
+                            <i class="right chevron icon"></i>
+                           </a> 
+                       </div>
+                    </div>
+                </div>
+           <% }) %>
+        </div>
+    </div>
+</div>
+
+
   <% include ./partials/footer %>
