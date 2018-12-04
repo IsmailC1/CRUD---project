@@ -1,7 +1,7 @@
 # CRUD-project
 
 This is a Blog-Site Web application. Before running it, please be sure that you have mongoDB running in another terminal. Here are 
-the steps that should be followed: 
+the steps which should be followed: 
 
 // for running the mongo-DB you first have to run these lines of code:
 // -->   sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 2930ADAE8CAF5059EE73BB4B58712A2291FA4AD5
@@ -14,5 +14,5 @@ the steps that should be followed:
 // and finely --> ./mongod
 
 After running the mongoDB the application will appear on your screen.You will see an example of CRUD implemented in the web-application.
-This web application doesn't include Bootstrap instead it's using ui-semantic. The aim of creating this app was to get used CRUD 
+This web application doesn't include Bootstrap instead it's using ui-semantic. The aim of creating this app was to get used to CRUD 
 and ui-semantic. Enjoy it!!    
