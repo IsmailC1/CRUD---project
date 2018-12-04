@@ -1,4 +1,4 @@
-# c9-projects
+# CRUD-project
 
 This is a Blog-Site Web application. Before running it, please be sure that you have mongoDB running in another terminal. Here are 
 the steps that should be followed: 
